@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Environments and secrets
+.env
+.env.local
+*.pem
+*.key
+secrets/
+
+# Local data — never commit
+data/raw/*
+data/processed/*
+data/exports/*
+!data/**/.gitkeep
+!data/**/README.md
+
+# Trained model artifacts (large, binary, regenerable)
+python/models/artifacts/
+*.pkl
+*.joblib
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Tableau local extracts
+tableau/extracts/
+*.hyper
+*.tdsx
